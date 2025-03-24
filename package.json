@@ -3,21 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev": "next dev",
+    "build": "next build && next-on-pages --experimental-minify",
+    "deploy": "npx wrangler pages deploy .vercel/output/static --project-name=ชื่อโปรเจกต์"
   },
   "dependencies": {
+    "next": "15.2.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.2.3"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.10",
+    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4"
   }
 }
