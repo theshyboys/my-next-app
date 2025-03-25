@@ -1,5 +1,37 @@
 import Image from "next/image";
 
+/*
+
+
+https://github.com/theshyboys/my-next-app.git
+
+…or create a new repository on the command line
+
+
+echo "# my-next-app" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/theshyboys/my-next-app.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/theshyboys/my-next-app.git
+git branch -M main
+git push -u origin main
+
+
+//--- add all ---//
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git push -u origin main
+
+*/
+
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
